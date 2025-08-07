@@ -1,6 +1,28 @@
 # Marian RKNN
 
-Python scripts and other resources to run MarianMT models on Rockchip NPU (RKNN) devices.
+This repo contains step-by-step instructions for running MarianMT models on Rockchip NPU (RKNN) devices. It also includes Python scripts to assist with the model conversion process.
+
+### Contents
+
+* [Background](#background)
+  * [MarianMT](#marianmt)
+  * [Key Challenges](#key-challenges)
+* [Prerequisites](#prerequisites)
+  * [Preflight](#preflight)
+* [Hugging Face](#hugging-face)
+* [ONNX Conversion](#onnx-conversion)
+
+## Background
+
+TODO: Brief discussion of NMT models.
+
+### MarianMT
+
+TODO: What is MarianMT
+
+### Key Challenges
+
+TODO: What are the key challenges in converting this to RKNN format.
 
 ## Prerequisites
 
@@ -12,7 +34,7 @@ pip install -r requirements.txt
 
 This includes dependencies for scripts in submodules too.
 
-## Preflight
+### Preflight
 
 The script `preflight.py` can be used to check that your system can run a pretrained model from Hugging Face. You can choose a device (e.g. CUDA) using the `--device <type>` argument, and a specific model using `--model-name <id>`.
 
@@ -28,8 +50,10 @@ Je suis un poisson
 >
 ```
 
+## Hugging Face
+
+TODO: Discuss using Hugging Face as a source of pretrained models.
+
 ## ONNX Converter
 
-In the [Marian-ONNX-Converter](./Marian-ONNX-Converter) submodule you will find an ONNX implementation of Marian, with a conversion script.
-
-This allows pretrained models on Hugging Face to be converted to ONNX format.
+In the [Marian-ONNX-Converter](./Marian-ONNX-Converter) submodule you will find an ONNX implementation of Marian. This includes a conversion script that allows pretrained models from Hugging Face to be converted to ONNX format.
